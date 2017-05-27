@@ -19,19 +19,19 @@ from crontab import Crontab
 
 cron = CronTab(user=True)
 
-job = cron.new(command='python /home/ubuntu/scraper/scraper.py')
+job = cron.new(command='python /home/ubuntu/apt_hunt/scraper/scraper.py')
 job.minute.on(0)
 job.hour.on(10)
 
-job = cron.new(command='python /home/ubuntu/scraper/scraper.py')
+job = cron.new(command='python /home/ubuntu/apt_hunt/scraper/scraper.py')
 job.minute.on(0)
 job.hour.on(13)
 
-job = cron.new(command='python /home/ubuntu/scraper/scraper.py')
+job = cron.new(command='python /home/ubuntu/apt_hunt/scraper/scraper.py')
 job.minute.on(0)
 job.hour.on(16)
 
-job = cron.new(command='python /home/ubuntu/scraper/scraper.py')
+job = cron.new(command='python /home/ubuntu/apt_hunt/scraper/scraper.py')
 job.minute.on(0)
 job.hour.on(19)
 
