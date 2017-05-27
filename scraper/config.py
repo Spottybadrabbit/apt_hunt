@@ -4,9 +4,9 @@ import os
 GOOGLE_MAPS_KEY = 'YOUR-GOOGLE-MAPS-KEY'
 PROJECT_ROOT = os.path.dirname(os.getcwd()) + '/'
 CL_bucket_name = 'yourbucketname'
-#using the us-west-2 region 
-CL_bucket_path = 'https://s3-us-west-2.amazonaws.com/' + CL_bucket_name + '/'
+AWS_S3_region = 'us-west-2'
 
+CL_bucket_path = 'https://s3-' + AWS_S3_region + '.amazonaws.com/' + CL_bucket_name + '/'
 #Areas to commute
 dest_coord_UCB = '37.8719034,-122.2607286'
 dest_coord_redwood = '37.4997475,-122.2970704'
