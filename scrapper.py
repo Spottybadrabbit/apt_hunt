@@ -18,11 +18,11 @@ DYNAMODB = boto3.resource('dynamodb')
 TABLE = DYNAMODB.Table(cc.CL_bucket_name)
 
 #initializing bounding boxes and BARF distance
-BBOXES = [x for x in open(cc.PROJECT_PATH + 'bbox.csv', 'r')]
+BBOXES = [x for x in open(cc.PROJECT_PATH + 'data/bbox.csv', 'r')]
 BOXES = {i: BBOXES[i].strip('\n').split(',') for i in range(len(BBOXES))}
 
 BARF_STNS = []
-with open(PROJECT_PATH + 'BARF.csv', 'r') as csvfile:
+with open(PROJECT_PATH + 'data/BARF.csv', 'r') as csvfile:
     datareader = csv.reader(csvfile, delimiter=',')
     header = next(datareader)
     for row in datareader:
