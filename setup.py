@@ -1,4 +1,7 @@
 from setuptools import setup
+import sys
+
+sys.path.insert(0, 'scraper')
 
 def readme():
     with open('README.md') as f:
@@ -14,24 +17,4 @@ setup(
     install_requires=["boto3", "python-crontab", "geopy", "lxml", "requests", "simplejson"]
 )
 
-import crontab
-
-cron = crontab.CronTab(user=True)
-
-job = cron.new(command='python /home/ubuntu/apt_hunt/scraper/scraper.py')
-job.minute.on(0)
-job.hour.on(10)
-
-job = cron.new(command='python /home/ubuntu/apt_hunt/scraper/scraper.py')
-job.minute.on(0)
-job.hour.on(13)
-
-job = cron.new(command='python /home/ubuntu/apt_hunt/scraper/scraper.py')
-job.minute.on(0)
-job.hour.on(16)
-
-job = cron.new(command='python /home/ubuntu/apt_hunt/scraper/scraper.py')
-job.minute.on(0)
-job.hour.on(19)
-
-cron.write()
+import cron
