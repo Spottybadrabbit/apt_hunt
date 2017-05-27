@@ -1,5 +1,5 @@
-""" helper_funcs module contains all functions needed for craigslist_scrapper.py"""
 #!/usr/bin/env
+""" helper_funcs module contains all functions needed for craigslist_scrapper.py"""
 import os
 import time
 import urllib
