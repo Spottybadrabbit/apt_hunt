@@ -2,7 +2,7 @@
 import os
 
 GOOGLE_MAPS_KEY = 'YOUR-GOOGLE-MAPS-KEY'
-PROJECT_PATH = os.getcwd() + '/'
+PROJECT_ROOT = os.path.dirname(os.getcwd()) + '/'
 CL_bucket_name = 'yourbucketname'
 #using the us-west-2 region 
 CL_bucket_path = 'https://s3-us-west-2.amazonaws.com/' + CL_bucket_name + '/'
