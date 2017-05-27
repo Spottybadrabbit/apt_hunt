@@ -14,9 +14,9 @@ setup(
     install_requires=["boto3", "python-crontab", "geopy", "lxml", "requests", "simplejson"]
 )
 
-from crontab import Crontab
+import crontab
 
-cron = CronTab(user=True)
+cron = crontab.CronTab(user=True)
 
 job = cron.new(command='python /home/ubuntu/apt_hunt/scraper/scraper.py')
 job.minute.on(0)
