@@ -16,5 +16,3 @@ setup(
     long_description=readme(),
     install_requires=["boto3", "python-crontab", "geopy", "lxml", "requests", "simplejson"]
 )
-
-import cron
