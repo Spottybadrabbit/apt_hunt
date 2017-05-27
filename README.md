@@ -27,7 +27,7 @@ cd apt_hunt
 sudo python setup.py install
 ```
 
-At this point, you should add your GOOGLE_API_KEY as well as set parameters in the [configuration file](scraper/config.py). Then run the scraper.py script or set sensible crontab jobs by running:
+At this point, you should add your GOOGLE_API_KEY and set parameters in the [configuration file](scraper/config.py). Then run the scraper.py script or set sensible crontab jobs by running:
 
 ```bash
 python scraper/cron.py
