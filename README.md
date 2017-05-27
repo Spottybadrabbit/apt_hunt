@@ -8,4 +8,4 @@ This repo features the code needed to set up your own tinder-like swipe applicat
 * Run the setup.py script
 
 ## Usage
-[[ https://s3-us-west-2.amazonaws.com/mayorquinmachines.ai/images/Apt_hunt.gif | height = 100px ]]
+[[https://s3-us-west-2.amazonaws.com/mayorquinmachines.ai/images/Apt_hunt.gif|height = 100px]]
