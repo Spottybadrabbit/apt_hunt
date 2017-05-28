@@ -33,6 +33,16 @@ At this point, you should add your GOOGLE_API_KEY and set parameters in the [con
 python scraper/cron.py
 ```
 
+### Installing the application
+Add the EC2 instance public IP address after SeverName on line 2 after running:
+```bash
+vim FlaskApps/AptHunt.conf
+```
+save and close the file and cd into the project root. Now run:
+```bash
+./setup.sh
+```
+
 ## Usage
 ![Alt Text](https://s3-us-west-2.amazonaws.com/mayorquinmachines.ai/images/Apt_hunt.gif)
 
